@@ -30,7 +30,7 @@ public class TokenService {
 
             // Construir o token com as informações do usuário
             return JWT.create()
-                    // Definir o assunto do token como o email do usuário
+                    // Definir o assunto (sujeito) do token como o email do usuário
                     .withSubject(usuario.getEmail())
                     // Definir o emissor do token
                     .withIssuer("API ProCardio")
