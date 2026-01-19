@@ -18,7 +18,7 @@ public class UsuarioService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-    @Autowired
+    @Autowired // Injetar o PasswordEncoder para criptografar senhas
     private PasswordEncoder passwordEncoder;
     
     // Serviço para gerenciar operações relacionadas ao usuário (CADASTRAR)
